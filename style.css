@@ -12,12 +12,13 @@ body {
     font-size: 50px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     background-color: white;
     padding: 10px 20px;
     font-weight: bold;
+    width: 100%;
 }
 
 /* Header */
@@ -75,4 +76,43 @@ nav{
 .a2 {
     color: #0000FF;
     font-size: 12px;
+}
+
+.save-button {
+    background-color: #FFEB3B;
+    color: #002060;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.goals-button {
+    background-color: #FFEB3B;
+    color: #002060;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.category{
+    background-color: #FFEB3B;
+    color: #002060;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.category input{
+    width: 3em;
+    margin-right: 10px;
 }
