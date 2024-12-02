@@ -11,6 +11,18 @@ body {
     line-height: 1.5;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.navbutton{
+    color: black;
+}
+
 /* Header */
 .header {
     display: flex;
