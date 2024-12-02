@@ -1,13 +1,95 @@
-h1 {
-    color: #FF0000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.a1 {
-    color: #00FF00;
-    font-size: 24px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002060;
+    color: #FFEB3B;
+    line-height: 1.5;
 }
 
-.a2 {
-    color: #0000FF;
-    font-size: 12px;
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFEB3B;
+    padding: 10px 20px;
+    color: #002060;
+    font-weight: bold;
+}
+
+.header-left button,
+.header-right button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #FFEB3B;
+    font-size: 1em;
+    color: #002060;
+    cursor: pointer;
+}
+
+.header-left .active {
+    font-weight: bold;
+}
+
+.header-right .user {
+    font-size: 0.9em;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 10px 20px;
+    color: #FFEB3B;
+    font-size: 0.9em;
+}
+
+.breadcrumb a {
+    color: #FFEB3B;
+    text-decoration: none;
+}
+
+/* Main Content */
+.main {
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category {
+    background-color: #FFEB3B;
+    color: #002060;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #FFEB3B;
+    color: #002060;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
