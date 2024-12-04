@@ -215,6 +215,25 @@ circle:hover {
     margin: 10px 0 20px 0;
 }
 
+.trofeekasten{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trofeekasten a {
+    text-decoration: none;
+    color: #FFEB3B;
+    background-color: hotpink;
+}
+
+.trofeekast {
+    width: 45vw !important;
+}
+
+.trofeekast-tekst {
+    text-align: center;
+}
+
 .spel {
     margin: 10px 0 40px 0;
 }
