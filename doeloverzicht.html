@@ -11,37 +11,46 @@
 <body>
 <header class="header">
     <div class="header-left">
-        <button class="font-size"><span class="a1">A</span><span class="a2">A</span><span class="a3">A</span></button>
-        <button class="accessibility-btn active">T</button>
-        <button class="accessibility-btn"><i class="speaker-icon"></i></button>
+        <button class="font-size" aria-label="Aanpassen van lettergrootte">
+            <span class="a1">A</span>
+            <span class="a2">A</span>
+            <span class="a3">A</span>
+        </button>
+        <button class="accessibility-btn active" aria-label="Hoog contrast aan/uit">
+            <span class="contrast-button1">T</span>
+            <span class="contrast-button2">T</span>
+        </button>
+        <button class="accessibility-btn" aria-label="Audio ondersteuning">
+            🔊
+        </button>
     </div>
-    <div class="header-center">
-        <a class="language">English</a>
+    <div class="header-center" >
+        <a class="language" aria-label="Kies taal: Engels">English</a>
     </div>
     <div class="header-right">
-        <span>John Doe</span>
+        <span aria-label="Ingelogde gebruiker: John Doe">John Doe</span>
     </div>
 </header>
-<nav class="nav">
-    <a href="index.html">Home</a> > <a href="goals.html">Doelen</a>
+<nav class="nav" role="navigation" aria-label="Hoofd navigatie">
+    <a href="index.html">Home</a> > <a href="goals.html" aria-current="page">Doelen</a>
 </nav>
-<main class="main">
+<main class="main" role="main">
     <section class="content">
         <h1>Doel overzicht</h1>
         <p>
             Hier kan je een overzicht vinden van de gekozen doelen en de progressie hiervan. Veel plezier!
         </p>
 
-        <div class="categories">
+        <div class="categories" aria-label="Doelenoverzicht">
             <div class="category">
-                <a href="school.html" class="goals-button">School ➤</a>
+                <a href="school.html" class="goals-button" aria-label="School">School ➤</a>
             </div>
             <div class="category">
-                <a href="vrienden.html" class="goals-button">Vrienden ➤</a>
+                <a href="vrienden.html" class="goals-button" aria-label="Vrienden">Vrienden ➤</a>
             </div>
         </div>
 
-        <a href="" class="save-button">
+        <a href="" class="save-button" aria-label="Opslaan">
             Doel toevoegen +
         </a>
     </section>

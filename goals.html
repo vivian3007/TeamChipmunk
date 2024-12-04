@@ -6,59 +6,68 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Chipmunk</title>
+    <title>Doelen</title>
 </head>
 <body>
 <header class="header">
     <div class="header-left">
-        <button class="font-size"><span class="a1">A</span><span class="a2">A</span><span class="a3">A</span></button>
-        <button class="accessibility-btn active"><span class="contrast-button1">T</span><span class="contrast-button2">T</span></button>
-        <button class="accessibility-btn"><i class="speaker-icon"></i></button>
+        <button class="font-size" aria-label="Aanpassen van lettergrootte">
+            <span class="a1">A</span>
+            <span class="a2">A</span>
+            <span class="a3">A</span>
+        </button>
+        <button class="accessibility-btn active" aria-label="Hoog contrast aan/uit">
+            <span class="contrast-button1">T</span>
+            <span class="contrast-button2">T</span>
+        </button>
+        <button class="accessibility-btn" aria-label="Audio ondersteuning">
+            🔊
+        </button>
     </div>
-    <div class="header-center">
-        <a class="language">English</a>
+    <div class="header-center" >
+        <a class="language" aria-label="Kies taal: Engels">English</a>
     </div>
     <div class="header-right">
-        <span>John Doe</span>
+        <span aria-label="Ingelogde gebruiker: John Doe">John Doe</span>
     </div>
 </header>
-<nav class="nav">
-    <a href="index.html">Home</a> > <a href="goals.html">Doelen</a>
+<nav class="nav" role="navigation" aria-label="Hoofd navigatie">
+    <a href="index.html">Home</a> > <a href="goals.html" aria-current="page">Doelen</a>
 </nav>
-<main class="main">
+<main class="main" role="main">
     <section class="content">
         <h1>Doel kiezen</h1>
         <p>Selecteer een of meerdere categorieën om je doel bij te halen. Succes!</p>
 
-        <form action="index.html" method="POST" class="categories-form">
+        <form action="index.html" method="POST" class="categories-form" aria-labelledby="form-instructions">
             <div class="categories">
                 <label class="category">
-                    <input type="checkbox" name="categories" value="School"/>
+                    <input type="checkbox" name="categories" value="School" aria-label="School"/>
                     School
                 </label>
                 <label class="category">
-                    <input type="checkbox" name="categories" value="Sport"/>
+                    <input type="checkbox" name="categories" value="Sport" aria-label="Sport"/>
                     Sport
                 </label>
                 <label class="category">
-                    <input type="checkbox" name="categories" value="Vrienden"/>
+                    <input type="checkbox" name="categories" value="Vrienden" aria-label="Vrienden"/>
                     Vrienden
                 </label>
                 <label class="category">
-                    <input type="checkbox" name="categories" value="Hobby1"/>
+                    <input type="checkbox" name="categories" value="Hobby" aria-label="Hobby"/>
                     Hobby
                 </label>
                 <label class="category">
-                    <input type="checkbox" name="categories" value="Hobby2"/>
+                    <input type="checkbox" name="categories" value="Werk" aria-label="Werk"/>
                     Hobby
                 </label>
                 <label class="category">
-                    <input type="checkbox" name="categories" value="Hobby3"/>
+                    <input type="checkbox" name="categories" value="Stage" aria-label="Stage"/>
                     Hobby
                 </label>
             </div>
 
-            <a href="doeloverzicht.html" class="save-button">Opslaan ➤</a>
+            <a href="doeloverzicht.html" class="save-button" aria-label="Opslaan">Opslaan ➤</a>
         </form>
     </section>
 </main>
