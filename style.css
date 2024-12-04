@@ -34,17 +34,18 @@ nav {
 
 .header-left button,
 .header-right button {
-    /*margin-right: 10px;*/
-    padding: 5px 10px;
     border: none;
     background: #FFEB3B;
-    font-size: 1em;
     color: #002060;
     cursor: pointer;
 }
 
 .header-left {
     margin: 0 0 0 12px;
+}
+
+.header-right {
+    margin: 0 12px 0 0;
 }
 
 .font-size span {
@@ -72,7 +73,7 @@ nav {
 }
 
 /* Main Content */
-.main {
+#main {
     padding: 20px;
 }
 
@@ -140,7 +141,7 @@ nav a {
 
 .border{
     width: 95vw;
-    height: 75vh;
+    height: auto;
     margin: auto;
     border: 2px white solid;
     padding: 2%;
@@ -158,6 +159,10 @@ nav a {
     padding: 0 12px 0 12px;
     background-color: #002060;
     color: white;
+}
+
+.accessibility-btn {
+    font-size: 48px;
 }
 
 circle {
@@ -186,6 +191,11 @@ circle:hover {
 
 .close-button:hover {
     color: white;
+}
+
+.trofees{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .text-doel-kiezen {

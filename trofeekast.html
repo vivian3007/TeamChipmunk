@@ -12,29 +12,41 @@
 <body>
 <header class="header">
   <div class="header-left">
-    <button class="font-size"><span class="a1">A</span><span class="a2">A</span><span class="a3">A</span></button>
-    <button class="accessibility-btn active">T</button>
-    <button class="accessibility-btn"><i class="speaker-icon"></i></button>
+    <a href="#main" class="skip-to-content" aria-label="Skip naar de content"></a>
+    <button class="font-size" aria-label="Aanpassen van lettergrootte">
+      <span class="a1">A</span>
+      <span class="a2">A</span>
+      <span class="a3">A</span>
+    </button>
+    <button class="accessibility-btn active" aria-label="Hoog contrast aan/uit">
+      <span class="contrast-button1">T</span>
+      <span class="contrast-button2">T</span>
+    </button>
+    <button class="accessibility-btn" aria-label="Audio ondersteuning">
+      🔊
+    </button>
   </div>
-  <div class="header-center">
-    <button class="language">English</button>
+  <div class="header-center" >
+    <a class="language" aria-label="Kies taal: Engels">English</a>
   </div>
   <div class="header-right">
-    <span>John Doe</span>
-    <i class="user-icon"></i>
+    <span aria-label="Ingelogde gebruiker: John Doe">John Doe</span>
   </div>
 </header>
-
-<nav class="nav">
-  <a href="#">Home</a>
+<nav class="nav" role="navigation" aria-label="Hoofd navigatie">
+  <a href="index.html" aria-current="page">Home</a> > <a href="trofeekast.html" aria-current="page">Trofeekast</a>
 </nav>
 
-<main class="main">
+<main id="main" role="main">
   <section class="content">
     <h1>Trofeekast</h1>
     <p>
       Zie hier je trofeekast en bekijk die van je vrienden.
     </p>
+    <div class="trofees">
+
+    </div>
+  </section>
 </main>
 </body>
 </html>
