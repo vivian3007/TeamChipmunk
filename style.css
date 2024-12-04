@@ -10,7 +10,6 @@ body {
     color: #FFEB3B;
     line-height: 1.5;
     font-size: 50px;
-    overflow: hidden;
 }
 
 nav {
@@ -187,4 +186,13 @@ circle:hover {
 
 .close-button:hover {
     color: white;
+}
+
+.text-doel-kiezen {
+    margin: 20px 0 40px 0;
+}
+
+.category {
+    width: 400px;
+    margin: 10px 10px 0 0;
 }
