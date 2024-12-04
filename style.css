@@ -224,5 +224,12 @@ circle:hover {
 }
 
 .goals-button {
-    margin: 100px 40px 40px 0;
+    margin: 80px 40px 100px 0;
+    width: 350px;
+    padding: 40px 40px 40px 40px;
+}
+
+.welcome-buttons {
+    display: flex;
+    justify-content: space-between;
 }
