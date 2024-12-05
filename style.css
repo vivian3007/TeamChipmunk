@@ -132,6 +132,7 @@ nav {
     font-weight: bold;
     display: inline-flex;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .category input {
@@ -229,11 +230,15 @@ circle:hover {
 .trofeekasten a {
     text-decoration: none;
     color: #FFEB3B;
-    background-color: hotpink;
+    background-color: #001848;
+    padding: 2%;
+    border: 2px solid white;
+    align-items: center;
+    text-align: center;
 }
 
 .trofeekast {
-    width: 40vw !important;
+    width: 35vw !important;
 }
 
 .trofeekast-tekst {
@@ -279,11 +284,19 @@ circle:hover {
 .trofee {
     width: 150px;
     height: auto;
-    display: block; /* Ensure it behaves like a block-level element */
-    text-decoration: none; /* Remove underline for the links */
+    display: block;
+    text-decoration: none;
 }
 
 .trofee img {
-    width: 100%; /* Scale the image within its parent */
-    display: block; /* Prevent extra spacing below images */
+    width: 100%;
+    display: block;
+}
+
+.trofeekast-vrienden-button {
+    width: 30%;
+}
+
+.trofee-vrienden-img {
+    width: 200px;
 }
