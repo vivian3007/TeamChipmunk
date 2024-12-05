@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Homepage</title>
+    <title>Chipmunk</title>
 </head>
+
 <body>
 <header class="header">
     <div class="header-left">
@@ -33,18 +34,29 @@
     </div>
 </header>
 <nav class="nav" role="navigation" aria-label="Hoofd navigatie">
-    <a href="index.html" aria-current="page">Home</a>
+    <a href="index.html" aria-current="page">Home</a> > <a href="trofeekasten.html" aria-current="page">Trofeekasten</a> > <a href="trofeekast_vrienden.html" aria-current="page">Trofeekast vrienden</a>
 </nav>
+
 <main id="main" role="main">
-    <h1>Welkom</h1>
-    <p class="spel">
-        Veel plezier in het Sla Je Doel spel
-    </p>
-    <q class="spel-onderzin">Stel persoonlijke doelen om je vaardigheden te vergroten. Leg the road to succes af en wordt een echte winnaar!</q>
-    <section class="welcome-buttons" aria-label="Acties">
-        <a class="goals-button" href="goals.html" aria-label="Doelen"><img src="includes/flag.png" alt="vlag"><p>Doelen</p></a>
-        <a class="goals-button" href="chat.html" aria-label="Chatten"><img src="includes/chat.png" alt="vlag"><p>Chatten</p></a>
-        <a class="goals-button" href="trofeekasten.html" aria-label="Trofeekast"><img src="includes/trofee.png" alt="vlag"><p>Trofeekast</p></a>
+    <section class="content">
+        <h1>Chats</h1>
+        <div class="chatlist">
+            <!--      Hier komen trofeekasten-->
+            <a href="trofeekast-daan.html" class="trofeekast-vrienden-button vrienden-oneven">
+                <img src="includes/daan.png" alt="Trofeeën Daan" class="vrienden-img">
+                <div class="chat-text">
+                    <h1>Daan</h1>
+                    <p>Hoi! Alles goed?</p>
+                </div>
+            </a>
+            <a href="trofeekast-daan.html" class="trofeekast-vrienden-button vrienden-even">
+                <img src="includes/dewi.png" alt="Trofeeën Dewi" class="vrienden-img">
+                <div class="chat-text">
+                    <h1>Dewi</h1>
+                    <p>Hey, heb jij je huiswerk al af?</p>
+                </div>
+            </a>
+        </div>
     </section>
 </main>
 </body>

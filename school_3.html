@@ -5,7 +5,7 @@
     <title>Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doel Behaald</title>
+    <title>School roadmap</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,26 +33,24 @@
     </div>
 </header>
 <nav class="nav" role="navigation" aria-label="Hoofd navigatie">
-    <a href="index.html">Home</a> > <a href="goals.html">Doelen</a> > <a href="school.html"
+    <a href="index.html">Home</a> > <a href="goals.html">Doelen</a> > <a href="school_1.html"
                                                                          aria-current="page">School</a>
 </nav>
 <main id="main" role="main">
-    <section class="popup-volledig">
-        <div class="popup-header">
-            <a href="school_4.html" class="close-button-popup" aria-label="Close">✖</a>
-        </div>
-        <div class="popup">
-            <div class="doelbehaald-header">
-                <h1>Jippie!!</h1>
-                <p>Je hebt jouw doel behaald!</p>
-            </div>
-            <img class="trofeekast-popup" alt="trofee" src="includes/trofee.png">
-        </div>
-        <div class="popup-buttons">
-            <a href="trofeekasten.html" class="popup-butt" aria-label="Bekijk-trofee-kasten">Bekijk trofee kasten ➤</a>
-            <a href="school_4.html" class="popup-butt" aria-label="Ga-terug-naar-home-page">Ga terug naar home
-                page ➤</a>
-        </div>
+    <section class="border">
+        <h1>Road to Succes</h1>
+        <p>Klik op de checkpoints om de opdrachten te starten!</p>
+        <svg class="roadmap-path" viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" aria-label="roadmap">
+            <title id="roadmap-title">Roadmap voor opdrachten</title>
+            <desc id="roadmap-desc">Een pad met checkpoints. Klik op een checkpoint om een opdracht te starten.</desc>
+            <path class="roadmap-line" d="M20,100 C150,-50 480,250 580,20"/>
+            <circle cx="50" cy="120" r="15" class="circle-active"><title>Checkpoint 1</title></circle>
+            <circle cx="200" cy="30" r="15" class="circle-active"><title>Checkpoint 2</title></circle>
+            <a href="opdracht_3.html">
+                <circle cx="350" cy="140" r="15" class="circle-next"><title>Checkpoint 3</title></circle>
+            </a>
+            <circle cx="580" cy="20" r="20"><title>Checkpoint 5</title></circle>
+        </svg>
     </section>
 </main>
 </body>

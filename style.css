@@ -181,11 +181,15 @@ nav a {
 
 circle {
     cursor: pointer;
+    fill: white ;
+}
+
+.circle-active {
     fill: #FFEB3B !important;
 }
 
-circle:hover {
-    fill: white !important;
+.circle-next:hover {
+    fill: #FFEB3B !important;
 }
 
 .roadmap-line {
@@ -257,7 +261,7 @@ circle:hover {
 }
 
 .trofeekast {
-    width: 35vw !important;
+    width: 30vw !important;
 }
 
 .trofeekast-tekst {
@@ -341,6 +345,18 @@ circle:hover {
     flex-direction: column;
     justify-content: space-between;
 
+}
+
+.chat-text h1, p{
+    text-align: start;
+}
+
+.chat-text{
+    width: 100%;
+}
+
+.chat-time {
+    margin-left: 70%;
 }
 
 .popup {
