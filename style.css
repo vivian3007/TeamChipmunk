@@ -342,3 +342,61 @@ circle:hover {
     justify-content: space-between;
 
 }
+
+.popup {
+    display:flex;
+    background-color: white;
+    margin: 40px 40px 40px 40px;
+    padding: 40px 40px 40px 40px;
+    gap: 100px;
+}
+
+.trofeekast-popup {
+    width: 200px;
+}
+
+.doelbehaald-header {
+    color: #002060;
+}
+
+.popup-volledig {
+    background-color: white;
+    margin: 60px 60px 60px 60px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popup-butt {
+    background-color: #FFEB3B;
+    color: #002060;
+    border: #002060;
+    text-decoration: none;
+    width: 400px;
+    padding: 10px 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin: 3% 0 40px 0;
+}
+
+.close-button-popup {
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: #002060;
+    text-decoration: none;
+}
+
+.popup-header {
+    padding: 20px 20px 20px 20px;
+    background: #FFEB3B;
+}
+
+.close-button-popup {
+    margin: 0 0 0 20px;
+}

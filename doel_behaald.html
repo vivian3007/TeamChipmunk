@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doel Behaald</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
+        <a href="#main" class="skip-to-content" aria-label="Skip naar de content"></a>
+        <button class="font-size" aria-label="Aanpassen van lettergrootte">
+            <span class="a1">A</span>
+            <span class="a2">A</span>
+            <span class="a3">A</span>
+        </button>
+        <button class="accessibility-btn active" aria-label="Hoog contrast aan/uit">
+            <span class="contrast-button1">T</span>
+            <span class="contrast-button2">T</span>
+        </button>
+        <button class="audio-button" aria-label="Audio ondersteuning">
+            🔊
+        </button>
+    </div>
+    <div class="header-center">
+        <a class="language" aria-label="Kies taal: Nederlands">Nederlands</a>
+    </div>
+    <div class="header-right">
+        <span aria-label="Ingelogde gebruiker: John Doe">John Doe</span>
+    </div>
+</header>
+<nav class="nav" role="navigation" aria-label="Hoofd navigatie">
+    <a href="index.html">Home</a> > <a href="goals.html">Doelen</a> > <a href="school.html"
+                                                                         aria-current="page">School</a>
+</nav>
+<main id="main" role="main">
+    <section class="popup-volledig">
+        <div class="popup-header">
+            <a href="school.html" class="close-button-popup" aria-label="Close">✖</a>
+        </div>
+        <div class="popup">
+            <div class="doelbehaald-header">
+                <h1>Jippie!!</h1>
+                <p>Je hebt jouw doel behaald!</p>
+            </div>
+            <img class="trofeekast-popup" alt="trofee" src="includes/trofee.png">
+        </div>
+        <div class="popup-buttons">
+            <a href="trofeekasten.html" class="popup-butt" aria-label="Bekijk-trofee-kasten">Bekijk trofee kasten ➤</a>
+            <a href="doeloverzicht.html" class="popup-butt" aria-label="Ga-terug-naar-home-page">Ga terug naar home
+                page ➤</a>
+        </div>
+    </section>
+</main>
+</body>
+</html>
