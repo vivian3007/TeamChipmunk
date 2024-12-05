@@ -120,7 +120,7 @@ nav {
     cursor: pointer;
 }
 
-.category{
+.category {
     background-color: #FFEB3B;
     color: #002060;
     margin-right: 10px;
@@ -130,16 +130,16 @@ nav {
     cursor: pointer;
 }
 
-.category input{
+.category input {
     width: 3em;
     margin-right: 10px;
 }
 
 nav a {
-    margin: 0 25px 0 25px ;
+    margin: 0 25px 0 25px;
 }
 
-.border{
+.border {
     width: 95vw;
     height: auto;
     margin: auto;
@@ -193,7 +193,7 @@ circle:hover {
     color: white;
 }
 
-.trofees{
+.trofees {
     display: flex;
     justify-content: space-evenly;
 }
@@ -215,7 +215,7 @@ circle:hover {
     margin: 10px 0 20px 0;
 }
 
-.trofeekasten{
+.trofeekasten {
     display: flex;
     justify-content: space-between;
 }
@@ -227,7 +227,7 @@ circle:hover {
 }
 
 .trofeekast {
-    width: 45vw !important;
+    width: 40vw !important;
 }
 
 .trofeekast-tekst {
@@ -251,4 +251,67 @@ circle:hover {
 .welcome-buttons {
     display: flex;
     justify-content: space-between;
+}
+
+/*.trofeekast-groot {*/
+/*    position: relative;*/
+/*    width: 100vw;*/
+/*    max-width: 800px;*/
+/*}*/
+
+/*.trofee img {*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*}*/
+
+/*.trophies {*/
+/*    position: absolute;*/
+/*    top: 19%;*/
+/*    left: 14%;*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*    gap: 0;*/
+/*    width: 75%;*/
+/*    justify-items: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.trofee {*/
+/*    width: 50px;*/
+/*    height: auto;*/
+/*}*/
+
+.trofeekast-groot {
+    position: relative;
+    width: 100vw;
+    max-width: 800px;
+}
+
+.trofeekast-img {
+    width: 100%;
+    display: block;
+}
+
+.trophies {
+    position: absolute;
+    top: 19%;
+    left: 14%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    width: 75%;
+    justify-items: center;
+    align-items: center;
+}
+
+.trofee {
+    width: 150px;
+    height: auto;
+    display: block; /* Ensure it behaves like a block-level element */
+    text-decoration: none; /* Remove underline for the links */
+}
+
+.trofee img {
+    width: 100%; /* Scale the image within its parent */
+    display: block; /* Prevent extra spacing below images */
 }
