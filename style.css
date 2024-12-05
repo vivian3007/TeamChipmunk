@@ -191,6 +191,14 @@ circle:hover {
     margin: 40px 0 20px 0;
 }
 
+.opdracht-tekst {
+    margin: 10px 0 20px 0;
+}
+
+.opdracht-titel {
+    margin: 10px 0 20px 0;
+}
+
 .close-button {
     background: transparent;
     border: none;
