@@ -216,10 +216,11 @@ circle {
 .close-button {
     background: transparent;
     border: none;
-    font-size: 1em;
+    font-size: 1.5em;
     cursor: pointer;
     color: #FFEB3B;
     text-decoration: none;
+    margin-right: 2%;
 }
 
 .close-button:hover {
@@ -281,7 +282,7 @@ circle {
 
 .welcome-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .trofeekast-groot {
@@ -418,4 +419,15 @@ circle {
 
 .close-button-popup {
     margin: 0 0 0 20px;
+}
+
+.title-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.title-div img {
+    width: 80%;
+    vertical-align: middle;
 }
