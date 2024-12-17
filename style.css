@@ -264,6 +264,7 @@ circle {
     border: 2px solid white;
     align-items: center;
     text-align: center;
+    width: 48vw;
 }
 
 .trofeekast {
@@ -315,6 +316,7 @@ circle {
     height: auto;
     display: block;
     text-decoration: none;
+    cursor: default;
 }
 
 .trofee img {
