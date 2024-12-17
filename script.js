@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const main = document.getElementById("main");
+    if (main) {
+        main.tabIndex = -1;
+        main.focus();
+    }
+});
+
+
+
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
@@ -67,7 +77,7 @@ function handleKeyDown(event) {
 }
 
 (function shuffle() {
-    cards.forEach((card, index) => {
+    cards.forEach((card) => {
         let randomPos = Math.floor(Math.random() * 12);
         card.style.order = randomPos;
 
