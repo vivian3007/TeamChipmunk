@@ -444,3 +444,49 @@ circle {
 }
 
 
+/*Minigame styles*/
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #FFEB3B;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+    transform: scale(1);
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+    background-color: hotpink;
+}
