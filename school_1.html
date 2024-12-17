@@ -38,20 +38,36 @@
 <main id="main" role="main">
     <section class="border">
         <div class="title-div">
-            <a href="doeloverzicht.html" aria-label="Terug"><img src="includes/arrow-back.png" alt="Terug"></a>
+            <a href="doeloverzicht.html" aria-label="Terug">
+                <img src="includes/arrow-back.png" alt="Terug">
+            </a>
             <h1>Road to Succes</h1>
         </div>
         <p>Klik op de checkpoints om de opdrachten te starten!</p>
         <svg class="roadmap-path" viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
             <title id="roadmap-title">Roadmap voor opdrachten</title>
             <desc id="roadmap-desc">Een pad met checkpoints. Klik op een checkpoint om een opdracht te starten.</desc>
-            <path class="roadmap-line" d="M20,100 C150,-50 480,250 580,20"/>
+            <path class="roadmap-line"
+                  d="M20,100
+               C100,0 200,200 300,100
+               S500,0 580,100" />
             <a href="opdracht_1.html">
-                <circle cx="50" cy="120" r="15" class="circle-next"><title>Checkpoint tijd vragen</title></circle>
+                <circle cx="50" cy="110" r="15" class="circle-next">
+                    <title>Checkpoint tijd vragen</title>
+                </circle>
             </a>
-                <circle cx="200" cy="30" r="15"><title>Checkpoint avondeten</title></circle>
-                <circle cx="350" cy="140" r="15"><title>Checkpoint dromen</title></circle>
-                <circle cx="580" cy="20" r="20"><title>Doel behaald!</title></circle>
+            <circle cx="200" cy="80" r="15">
+                <title>Checkpoint avondeten</title>
+            </circle>
+            <circle cx="400" cy="70" r="15">
+                <title>Checkpoint dromen</title>
+            </circle>
+            <image href="includes/schat-wit.png" x="580" y="100" width="50" height="50" role="img" aria-label="Doel behaald!">
+                <title>Doel behaald!</title>
+            </image>
+<!--            <circle cx="580" cy="100" r="20">-->
+<!--                <title>Doel behaald!</title>-->
+<!--            </circle>-->
         </svg>
     </section>
 </main>

@@ -195,10 +195,17 @@ circle {
     fill: #FFEB3B !important;
 }
 
+/*.roadmap-line {*/
+/*    stroke: #FFEB3B;*/
+/*    fill: none;*/
+/*    stroke-width: 10;*/
+/*}*/
+
 .roadmap-line {
     stroke: #FFEB3B;
+    stroke-dasharray: 15, 10;
+    stroke-width: 12;
     fill: none;
-    stroke-width: 10;
 }
 
 .roadmap-path {
@@ -431,3 +438,9 @@ circle {
     width: 80%;
     vertical-align: middle;
 }
+
+.schatkist-next:hover {
+    filter: brightness(0) saturate(100%) invert(92%) sepia(66%) saturate(800%) hue-rotate(360deg) brightness(100%) contrast(98%);
+}
+
+
