@@ -192,14 +192,9 @@ circle {
 }
 
 .circle-next:hover {
-    fill: #FFEB3B !important;
+    fill: white !important;
+    /*filter: brightness(100%) contrast(100%) invert(1) !important;*/
 }
-
-/*.roadmap-line {*/
-/*    stroke: #FFEB3B;*/
-/*    fill: none;*/
-/*    stroke-width: 10;*/
-/*}*/
 
 .roadmap-line {
     stroke: #FFEB3B;
@@ -439,9 +434,9 @@ circle {
     vertical-align: middle;
 }
 
-.schatkist-next:hover {
-    filter: brightness(0) saturate(100%) invert(92%) sepia(66%) saturate(800%) hue-rotate(360deg) brightness(100%) contrast(98%);
-}
+/*.schatkist-next:hover {*/
+/*    filter: brightness(0) saturate(100%) invert(92%) sepia(66%) saturate(800%) hue-rotate(360deg) brightness(100%) contrast(98%);*/
+/*}*/
 
 
 /*Minigame styles*/
