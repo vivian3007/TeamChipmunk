@@ -83,7 +83,6 @@ function handleKeyDown(event) {
         card.style.order = randomPos;
 
         card.setAttribute("tabindex", randomPos); //TODO: tab werkt niet goed????
-        //test
     });
 })();
 
