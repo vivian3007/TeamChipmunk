@@ -487,3 +487,15 @@ circle {
     transform: rotateY(180deg);
     background-color: hotpink;
 }
+
+.schatkist-form {
+    display:flex;
+    flex-direction: column;
+}
+
+.schatkist-form input {
+    width: 520px;
+    height: 100px;
+    font-size: 1em;
+    padding: 10px;
+}
