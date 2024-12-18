@@ -21,6 +21,10 @@ function flipCard() {
     if (this === firstCard) return;
     this.classList.add('flip');
 
+    const cardType = this.dataset.card;
+    const audio = new Audio(`includes/${cardType}.mp3`);
+    audio.play();
+
     if (!hasFlippedCard) {
         hasFlippedCard = true;
         firstCard = this;
@@ -34,7 +38,6 @@ function flipCard() {
 
 function checkForMatch() {
     let isMatch = firstCard.dataset.card === secondCard.dataset.card;
-    console.log(isMatch)
     isMatch ? disableCards() : unflipCards();
 }
 
@@ -45,7 +48,6 @@ function disableCards() {
     secondCard.removeEventListener('keydown', handleKeyDown);
 
     matchedPairs++;
-    console.log(matchedPairs)
     if (matchedPairs === totalPairs) {
         setTimeout(() => {
             window.location.href = 'doel_behaald.html';
@@ -79,9 +81,10 @@ function handleKeyDown(event) {
 (function shuffle() {
     cards.forEach((card) => {
         let randomPos = Math.floor(Math.random() * 12);
+        console.log(randomPos)
         card.style.order = randomPos;
 
-        card.setAttribute("tabindex", randomPos); //TODO: niet bij de laatste kaart beginnen????
+        card.setAttribute("tabindex", randomPos); //TODO: tab werkt niet goed????
     });
 })();
 
