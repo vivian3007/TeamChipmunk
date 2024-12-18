@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
@@ -49,9 +48,8 @@ function disableCards() {
 
     matchedPairs++;
     if (matchedPairs === totalPairs) {
-        setTimeout(() => {
-            window.location.href = 'doel_behaald.html';
-        }, 800);
+        const audio = new Audio(`includes/Trumpet.mp3`);
+        audio.play();
     }
 
     resetBoard();
