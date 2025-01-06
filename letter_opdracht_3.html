@@ -5,10 +5,11 @@
     <title>Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School opdracht 1</title>
+    <title>Opdracht 1 Behaald</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<audio src="includes/Trumpet.mp3" autoplay></audio>
 <header class="header">
     <div class="header-left">
         <a href="#main" class="skip-to-content" aria-label="Skip naar de content"></a>
@@ -25,7 +26,7 @@
             🔊
         </button>
     </div>
-    <div class="header-center" >
+    <div class="header-center">
         <a class="language" aria-label="Kies taal: Nederlands">Nederlands</a>
     </div>
     <div class="header-right">
@@ -33,20 +34,32 @@
     </div>
 </header>
 <nav class="nav" role="navigation" aria-label="Hoofd navigatie">
-    <a href="index.html">Home</a> > <a href="doeloverzicht.html">Doelen</a> > <a href="school_1.html" aria-current="page">School</a>
+    <a href="index.html">Home</a> > <a href="doeloverzicht.html">Doelen</a> > <a href="school_1.html"
+                                                                                 aria-current="page">School</a>
 </nav>
 <main id="main" role="main">
-    <section class="border" aria-label="opdracht 1">
-        <div class="title-div">
-<!--            <a href="school_1.html" class="close-button" aria-label="Sluiten">✖</a>-->
-            <a href="school_1.html" aria-label="Terug"><img src="includes/arrow-back.png" alt="Terug"></a>
-            <h1 class="opdracht-titel">Opdracht 1</h1>
+    <section class="popup-volledig">
+        <div class="popup-header">
+            <a href="school_4.html" class="close-button-popup" aria-label="Close">✖</a>
         </div>
-        <p class="opdracht-tekst">Ga een keer langs bij je nieuwe studie. </p>
-        <p class="opdracht-tekst">Knoop daarbij een gesprek aan met de directeur.</p>
-        <a href="letter_opdracht_1.html" class="save-button" aria-label="Opdracht behaald!">Opdracht behaald!</a>
+        <div class="popup">
+            <div class="doelbehaald-header">
+                <h1>Je hebt een letter verdiend: S!</h1>
+                <p>Onthoud je letter goed voor later...</p>
+            </div>
+            <img class="trofeekast-popup" alt="trofee" src="includes/trofee.png">
+        </div>
+        <div class="popup-buttons">
+            <a href="school_4.html" class="popup-butt" aria-label="schatkaart">Schatkaart ➤</a>
+        </div>
     </section>
 </main>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+<script>
+    const jsConfetti = new JSConfetti();
+
+    jsConfetti.addConfetti();
+</script>
 </body>
 </html>
