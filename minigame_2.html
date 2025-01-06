@@ -1,2 +1,110 @@
-<h1>Hier komt minigame 2</h1>
-<a href="opdracht_2.html">Ga naar opdracht 2</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory minigame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
+        <a href="#main" class="skip-to-content" aria-label="Skip naar de content"></a>
+        <button class="font-size" aria-label="Aanpassen van lettergrootte">
+            <span class="a1">A</span>
+            <span class="a2">A</span>
+            <span class="a3">A</span>
+        </button>
+        <button class="accessibility-btn active" aria-label="Hoog contrast aan/uit">
+            <span class="contrast-button1">T</span>
+            <span class="contrast-button2">T</span>
+        </button>
+        <button class="audio-button" aria-label="Audio ondersteuning">
+            🔊
+        </button>
+    </div>
+    <div class="header-center">
+        <a class="language" aria-label="Kies taal: Nederlands">Nederlands</a>
+    </div>
+    <div class="header-right">
+        <span aria-label="Ingelogde gebruiker: John Doe">John Doe</span>
+    </div>
+</header>
+<nav class="nav" role="navigation" aria-label="Hoofd navigatie">
+    <a href="index.html">Home</a> > <a href="doeloverzicht.html">Doelen</a> > <a href="school_4.html"
+                                                                                 aria-current="page">School</a>
+</nav>
+<main id="main" role="main">
+    <div class="title-div">
+        <a href="school_4.html" aria-label="Terug"><img src="includes/arrow-back.png" alt="Terug"></a>
+        <h1>Minigame: memory!</h1>
+    </div>
+    <p>Zoek dezelfde kaartjes bij elkaar en maak 6 paren.</p>
+    <section class="memory-game">
+        <div class="memory-card" data-card="de-verloren-horizon" tabindex="0">
+            <img class="front-face" src="includes/Ship.jpg" alt="De Verloren Horizon">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="de-verloren-horizon" tabindex="0">
+            <img class="front-face" src="includes/Ship.jpg" alt="De Verloren Horizon">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="ezel" tabindex="0">
+            <img class="front-face" src="includes/Ezel.jpg" alt="Ezel">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="ezel" tabindex="0">
+            <img class="front-face" src="includes/Ezel.jpg" alt="Ezel">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="sword" tabindex="0">
+            <img class="front-face" src="includes/zwaard.jpg" alt="Zwaard">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="sword" tabindex="0">
+            <img class="front-face" src="includes/zwaard.jpg" alt="Zwaard">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="parrot" tabindex="0">
+            <img class="front-face" src="includes/parrot.jpg" alt="Papegaai">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="parrot" tabindex="0">
+            <img class="front-face" src="includes/parrot.jpg" alt="Papegaai">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="deur" tabindex="0">
+            <img class="front-face" src="includes/Deur.jpg" alt="Deur">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="deur" tabindex="0">
+            <img class="front-face" src="includes/Deur.jpg" alt="Deur">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="rum" tabindex="0">
+            <img class="front-face" src="includes/rum.jpg" alt="Drink Fles">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+
+        <div class="memory-card" data-card="rum" tabindex="0">
+            <img class="front-face" src="includes/rum.jpg" alt="Drink Fles">
+            <img class="back-face" src="includes/Coin.jpg">
+        </div>
+    </section>
+    <a href="opdracht_2.html" class="save-button" aria-label="Ga door naar de opdracht">Ga door naar de opdracht</a>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
