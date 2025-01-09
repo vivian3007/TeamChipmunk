@@ -79,10 +79,12 @@ function handleKeyDown(event) {
 (function shuffle() {
     cards.forEach((card) => {
         let randomPos = Math.floor(Math.random() * 12);
-        console.log(randomPos)
         card.style.order = randomPos;
 
+        console.log(randomPos)
+
         card.setAttribute("tabindex", randomPos); //TODO: tab werkt niet goed????
+        card.setAttribute("aria-label", `Kaartje ${randomPos + 1}`);
     });
 })();
 
